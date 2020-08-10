@@ -6,7 +6,10 @@ final_result=0
 add=dict()
 count=dict()
 n=int(input("Enter the number: "))
-d=(int(math.log(n,10)))+1
+if n==1000:
+    d=4
+else:    
+    d=(int(math.log(n,10)))+1 #counts the number of digits
 for s in range(1,(d+1)):
     add[s]=0
 i=1 
@@ -14,7 +17,11 @@ i=1
 while(i<=len(add)):
     c=0
     for j in range(1,n+1):
-        if ((int(math.log(j,10)))+1)==i:
+        if (j==1000):
+            if((int(math.log(j,10)))+2)==i:
+                add[i]=(add[i])*(pow(10,i))+j
+                c=c+1
+        elif((int(math.log(j,10)))+1)==i:
             add[i]=(add[i])*(pow(10,i))+j
             c=c+1
         else:
