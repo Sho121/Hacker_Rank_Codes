@@ -2,7 +2,6 @@
 #concatenating two numbers without string implementation
 import math
 result=0
-final_result=0
 add=dict()
 count=dict()
 n=int(input("Enter the number: "))
