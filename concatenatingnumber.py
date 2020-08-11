@@ -5,7 +5,7 @@ result=0
 add=dict()
 count=dict()
 n=int(input("Enter the number: "))
-if n==1000:
+if n==1000: #there was problem with counting the digits of the number 1000 so had to make an exception
     d=4
 else:    
     d=(int(math.log(n,10)))+1 #counts the number of digits
